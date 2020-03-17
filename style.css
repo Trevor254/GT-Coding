@@ -235,10 +235,72 @@ section{
 .btn-readmore:hover{
     background:red;
     text-decoration: none;
-    padding:8px 64px;
+    padding:8px 64px 8px 24px;
     color:white;
 }
 
+/* Footer */
+
+footer{
+    background: black;
+    padding: 8px;
+    color:#eee;
+    display:flex;
+}
+
+footer a{
+    color:white
+}
+
+footer #left-footer{
+    flex:1;
+    border-right:1px solid red;
+    padding-left: 32px;
+}
+
+footer #left-footer ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer #right-footer ul{
+    flex:2;
+    padding:8px;
+    text-align: center ;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-youtube,
+footer #social-media-footer a .fa-github{
+    color: white;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer ul li{
+    font-size:48px;
+    padding:16px;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul li:hover a .fa-youtube{
+    color:red;
+}
+
+footer #social-media-footer ul li:hover a .fa-facebook{
+    color:rgb(0, 94, 255);
+}
+
+footer #social-media-footer ul li:hover a .fa-github{
+    color:#bbb;
+}
 
 /*Media Queries*/
 
@@ -252,5 +314,11 @@ section{
     }
     .card .card-image img{
         width:100%;
+    }
+}
+
+@media(min-width:1200px){
+    main{
+        width:85%;
     }
 }
