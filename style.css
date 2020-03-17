@@ -125,3 +125,48 @@ nav ul{
     color:#f783ae;
 }
 
+#logo-img{
+    display: flex;
+    height:100%;
+    background:#111;
+    padding: 0 32px;
+    align-items: center;
+    color:white;
+    transition: 0.4s;
+}
+
+#logo-img img{
+    height:75px;
+}
+
+#logo-img:hover{
+    background:black;
+}
+
+#menu-icon{
+    height:100%;
+    font-size:28px;
+    padding:0 4px;
+    color: #eee;
+    display:none;
+    align-items: center;
+}
+
+/* Search icon */
+#search-icon{
+    color:white;
+    padding:0 32px;
+    cursor:pointer;
+    transition: 0.4s;
+}
+
+#search-icon:hover{
+    color:red;
+}
+
+/*slideout menu*/
+
+#slideout-menu{
+    display: none;
+}
+
