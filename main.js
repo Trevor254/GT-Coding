@@ -2,7 +2,7 @@
 const menuIcon = document.getElementById("menu-icon");
 const slideoutMenu = document.getElementById("slideout-menu");
 const searchIcon = document.getElementById("search-icon");
-const searchBox = document.getElementById("search-box");
+const searchBox = document.getElementById("searchbox");
 
 //function to show searchbox upon click of search icon on navbar
 searchIcon.addEventListener('click',()=>{
@@ -14,3 +14,15 @@ searchIcon.addEventListener('click',()=>{
         searchBox.style.pointerEvents = 'auto';
     }
 });
+
+
+//menu icon functionality for mobile version
+menuIcon.addEventListener('click',() => {
+    if(slideoutMenu.style.opacity == '1'){
+        slideoutMenu.style.opacity = '0';
+        slideoutMenu.style.pointerEvents = 'none';
+    } else {
+        slideoutMenu.style.opacity = '1';
+        slideoutMenu.style.pointerEvents = 'auto';
+    }
+})
