@@ -45,7 +45,7 @@ textarea:focus{
     outline: none;
 }
 
-/* Banner */
+/*--------------------------------------------------------------Banner------------------------------------------*/
 
 #banner{
    height: 100vh;
@@ -68,7 +68,7 @@ textarea:focus{
     font-size:24
 }
 
-/* Search Box*/
+/*------------------------------------------------------------Search Box----------------------------------------*/
 
 #searchbox{
     position:fixed;
@@ -85,7 +85,7 @@ textarea:focus{
     width:100%;
 }
 
-/* Nav bar*/
+/*--------------------------------------------------------------Nav bar-----------------------------------------*/
 nav{
     height:72px;
     background:#202125;
@@ -152,7 +152,7 @@ nav ul{
     align-items: center;
 }
 
-/* Search icon */
+/*----------------------------------------------------------Search icon------------------------------------------ */
 #search-icon{
     color:white;
     padding:0 32px;
@@ -164,7 +164,7 @@ nav ul{
     color:red;
 }
 
-/*slideout menu*/
+/*--------------------------------------------------------slideout menu----------------------------------------*/
 
 #slideout-menu{
     display: none;
@@ -202,7 +202,7 @@ nav ul{
     text-align: center;
 }
 
-/* Sections*/
+/*-------------------------------------------------------------Sections---------------------------------------*/
 section{
     display:flex;
     justify-content: space-around;
@@ -250,7 +250,7 @@ section{
     padding: 0 8px;
 }
 
-/*Button read more*/
+/*---------------------------------------------------Button read more-------------------------------*/
 
 .btn-readmore{
     padding:8px 24px;
@@ -271,7 +271,7 @@ section{
     color:white;
 }
 
-/* Footer */
+/*---------------------------------------------------Footer------------------------------------- */
 
 footer{
     background: black;
@@ -334,7 +334,56 @@ footer #social-media-footer ul li:hover a .fa-github{
     color:#bbb;
 }
 
-/*Media Queries*/
+/* ----------------------------------------Blog list page----------------------------------------- */
+
+.page-heading{
+    font-size:32px;
+    font-family:'Roboto Condensed', sans-serif;
+    border-left:3px solid black;
+    border-right:3px solid black;
+    transition:all 0.4s;
+    display:inline-block;
+    padding:4px 32px;
+    margin-top:120px;
+}
+
+.page-heading:hover{
+    padding:4px 48px;
+    background:red;
+}
+
+.card-meta{
+    color:#333;
+    font-size:14px;
+    padding-left:8px;
+    font-family:'Robot Slab', serif;
+}
+
+.card-meta a{
+    color:#333;
+}
+
+/*----------------------------------------Pagination----------------------------------------------*/
+
+.pagination{
+    padding:8px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.pagination a{
+    border-top:3px solid white;
+    display:inline-block;
+    padding:8px 16px;
+    transition:0.4s;
+}
+
+.pagination a:hover{
+    text-decoration: none;
+    border-top:3px solid black;
+}
+
+/* ---------------------------------------Media Queries------------------------------------------*/
 
 @media(max-width:719px){
     main{
