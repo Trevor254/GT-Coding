@@ -383,6 +383,37 @@ footer #social-media-footer ul li:hover a .fa-github{
     border-top:3px solid black;
 }
 
+/*----------------------------------------Single BlogPost----------------------------------------*/
+
+#post-container{
+    display:flex;
+}
+
+#blogpost{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    border-left:1px solid #999;
+}
+
+#blogpost .card{
+    width:100%;
+}
+
+#blogpost .card-image:hover{
+    box-shadow:none;
+}
+
+/*---------------------------------------Sidebar--------------------------------------------------*/
+
+#sidebar{
+    background:#333;
+    flex:1;
+    padding:8px 16px;
+    color:white;
+    box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75)
+}
+
 /* ---------------------------------------Media Queries------------------------------------------*/
 
 @media(max-width:719px){
@@ -455,6 +486,15 @@ footer #social-media-footer ul li:hover a .fa-github{
 
     #searchbox{
         display: none;
+    }
+
+    #blogpost{
+        width:100%;
+        border-left: 0;
+    }
+
+    #sidebar{
+        display:none;
     }
 }
 
